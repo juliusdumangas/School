@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class Cherifer {
     public static void main(String[] args){
         int rep;
-        int input;
+        String input = "";
         boolean not = false;
         Scanner s = new Scanner(System.in);
 
@@ -32,10 +32,8 @@ public class Cherifer {
                 break;
             }
         }
+
         System.out.printf("\nPlease enter %d numbers: ", rep);
-        while (rep != 0){
-            input = s.nextInt();
-            rep--;
-        }
+        input = s.nextLine();
     }
 }
