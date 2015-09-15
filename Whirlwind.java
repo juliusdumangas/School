@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 /*
  *      This program will prompt the user to enter
- *      how many numbers to input. Accept the
- *      numbers and display the sum of the numbers.
+ *      how many repbers to input. Accept the
+ *      repbers and display the sum of the repbers.
  *      
  * @version 1.0 15 Sep 2015  
  * @author Julius Adriell Dumangas
@@ -16,19 +16,19 @@ import java.util.Scanner;
 
 public class Whirlwind {
     public static void main(String[] args){
-        int num;
+        int rep;
         int input;
         int sum = 0;
         Scanner s = new Scanner(System.in);
 
-        System.out.print("\nHow many numbers: ");
-        num = s.nextInt();
-        System.out.println("\nEnter numbers.");
+        System.out.print("\nHow many repbers: ");
+        rep = s.nextInt();
+        System.out.println("\nEnter repbers.");
 
-        while (num != 0){
+        while (rep != 0){
             input = s.nextInt();
             sum += input;
-            num--;
+            rep--;
         }
         System.out.printf("\n-----\n");
         System.out.println(sum);
