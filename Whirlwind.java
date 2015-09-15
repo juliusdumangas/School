@@ -16,6 +16,21 @@ import java.util.Scanner;
 
 public class Whirlwind {
     public static void main(String[] args){
-        
+        int num;
+        int input;
+        int sum = 0;
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("\nHow many numbers: ");
+        num = s.nextInt();
+        System.out.println("\nEnter numbers.");
+
+        while (num != 0){
+            input = s.nextInt();
+            sum += input;
+            num--;
+        }
+        System.out.printf("\n-----\n");
+        System.out.println(sum);
     }
 }
