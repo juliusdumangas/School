@@ -26,7 +26,7 @@ public class Password2 {
             System.out.print("PASSWORD: ");
             input = s.nextLine();
 
-            if (input.compareTo(password) == 0){
+            if (input.equals(password)){
                 System.out.println("\nWELCOME");
                 break;
             }

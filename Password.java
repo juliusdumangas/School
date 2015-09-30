@@ -20,7 +20,7 @@ public class Password {
         String password = "souPexeMce"; 
         Scanner s = new Scanner(System.in);
 
-        while (input.compareTo(password) != 0 ){
+        while ( !(input.equals(password)) ){
             System.out.print("PASSWORD: ");
             input = s.nextLine();
         }

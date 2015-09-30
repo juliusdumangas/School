@@ -16,11 +16,20 @@ import java.util.Scanner;
 
 public class Star {
     public static void main(String[] args){
-        int height;
+        int height = 0;
         Scanner s = new Scanner(System.in);
 
-        System.out.print("\nEnter height from 3 to 15: ");
-        height = s.nextInt();
+        while (true){
+            System.out.print("\nEnter height from 3 to 15: ");
+            height = s.nextInt();
+
+            if (height < 3 || (height % 2 == 0) || height > 15){
+                System.out.print("\nERROR: Must be an odd number "+
+                    "and from 3 to 15.");
+            }else{
+                break;
+            }
+        }
 
         for (int i = 1; i <= height; i++){
             for (int j = 1; j <= height; j++){
