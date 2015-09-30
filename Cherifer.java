@@ -28,7 +28,7 @@ public class Cherifer {
             System.out.print("\nHow many numbers to process: ");
             rep = s.nextInt();
             if (rep <= 1){
-                System.out.print("\nERROR: Enter a number greater that 1.");
+                System.out.print("\nERROR: Enter a number greater than 1.");
             }else{
                 break;
             }
