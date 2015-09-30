@@ -10,7 +10,7 @@ import java.util.Scanner;
  *      with the highest score assuming that the 
  *      scores are unique.
  *      
- * @version 1.0 16 Sep 2015  
+ * @version 1.0 19 Sep 2015  
  * @author Julius Adriell Dumangas
  * 
  */
